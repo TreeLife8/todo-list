@@ -10,6 +10,11 @@
 .Footer span {
   opacity: 0.7;
 }
+.Footer a {
+  opacity: 0.4;
+  color: var(--pink-colour);
+  text-decoration: none;
+}
 .Footer img {
   max-width: 120px;
 }
@@ -17,5 +22,9 @@
 @media (max-width: 420px) {
   .Footer img {
     max-width: 80px;
+  }
+  .Footer a,
+  .Footer span {
+    font-size: 12px;
   }
 }

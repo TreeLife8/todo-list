@@ -8,6 +8,14 @@ export default function Footer() {
       <hr />
       <span>crafted by</span>{" "}
       <img src={logo} alt="SquiggleCode logo" className="img-fluid" />
+      <a
+        href="https://github.com/TreeLife8/todo-list"
+        target="_blank"
+        rel="noreferrer"
+      >
+        {" "}
+        open sourced on GitHub
+      </a>
     </div>
   );
 }
