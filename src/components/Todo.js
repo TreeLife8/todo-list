@@ -13,9 +13,9 @@ export default function Todo(props) {
   });
   const [colourBg, setColourBg] = useState({
     id: null,
-    type: "",
+    type: "grey",
   });
-  const [visible, setVisible] = useState(false);
+  // const [visible, setVisible] = useState(false);
   const colourPallet = [
     { id: 1, shade: "aqua" },
     { id: 2, shade: "blue" },
@@ -31,19 +31,28 @@ export default function Todo(props) {
     setEdit({
       id: null,
       value: "",
+      colour: "grey",
     });
   }
-  function buttonClickHandler(id, colour) {
-    console.log(colour);
-    setColourBg({ id: id, type: colourPallet[colour - 1].shade });
-    console.log(colourPallet[colour - 1].shade);
-    console.log(colourBg.type);
+  function buttonClickHandler(id, text, colour) {
+    setColourBg({ id: id, ...colour });
+    let taskText = text;
+    let taskColour = colourPallet[colour - 1].shade;
+    handleSubmit(id, taskText, taskColour);
+  }
+  function handleSubmit(id, taskText, taskColour) {
+    let newValue = {
+      id: id,
+      text: taskText,
+      colour: taskColour,
+    };
+    props.updateTodoColour(id, newValue);
   }
   return (
     <div className="Todo">
       {props.todos.map((todo, index) => (
         <div>
-          <div className={colourBg.type}>
+          <div className={todo.colour}>
             <div
               className={
                 todo.isComplete
@@ -72,20 +81,22 @@ export default function Todo(props) {
                   className="edit-icon"
                 />
                 <AiOutlineBgColors
-                  onClick={() => setColourBg({ id: todo.id, type: "" })}
+                  onClick={() => setColourBg({ id: todo.id, type: "grey" })}
                   className="colour-icon"
                 />
               </div>
             </div>
           </div>
           {colourBg.id === todo.id ? (
-            <div className={visible ? "hidden" : null}>
+            <div>
               <div className="colour-pallet">
                 {colourPallet.map((colour, index) => (
                   <button
                     key={colour.id}
                     disabled={colour.clicked}
-                    onClick={() => buttonClickHandler(todo.id, colour.id)}
+                    onClick={() =>
+                      buttonClickHandler(todo.id, todo.text, colour.id)
+                    }
                   >
                     <GiWaterDrop
                       key={index}

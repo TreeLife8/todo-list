@@ -45,16 +45,6 @@
   height: 48px;
   align-items: center;
 }
-.aqua,
-.blue,
-.pink,
-.yellow,
-.orange,
-.green,
-.purple,
-.grey {
-  font-size: 30px;
-}
 .Todo .colour-pallet {
   background: #fff;
   display: flex;
@@ -76,7 +66,7 @@
   border-radius: 6px;
   max-width: 480px;
   margin: 0px auto;
-  font-size: 18px;
+  font-size: 15px;
 }
 .Todo .aqua {
   background: #66bfbf;

@@ -19,6 +19,7 @@ export default function TodoForm(props) {
     props.onSubmit({
       id: Math.floor(Math.random() * 100000),
       text: input,
+      colour: "grey",
     });
     setInput("");
   }

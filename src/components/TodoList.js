@@ -3,7 +3,7 @@ import Todo from "./Todo";
 import TodoForm from "./TodoForm";
 import "./TodoList.css";
 
-export default function TodoList(props) {
+export default function TodoList() {
   const [todos, setTodos] = useState([]);
 
   function addTodo(todo) {
@@ -19,6 +19,11 @@ export default function TodoList(props) {
       return;
     }
     setTodos((prev) => prev.map((item) => (item.id === id ? newValue : item)));
+  }
+  function updateTodoColour(taskId, Newcolour) {
+    setTodos((prev) =>
+      prev.map((item) => (item.id === taskId ? Newcolour : item))
+    );
   }
   function removeTodo(id) {
     const removeArr = [...todos].filter((todo) => todo.id !== id);
@@ -43,6 +48,7 @@ export default function TodoList(props) {
         completeTodo={completeTodo}
         removeTodo={removeTodo}
         updateTodo={updateTodo}
+        updateTodoColour={updateTodoColour}
       />
     </div>
   );
