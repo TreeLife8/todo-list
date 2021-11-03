@@ -5,3 +5,9 @@
   opacity: 0.6;
   margin: 30px 50px 50px;
 }
+@media (max-width: 380px) {
+  .TodoList h2 {
+    margin: 20px 10px;
+    font-size: 23px;
+  }
+}
