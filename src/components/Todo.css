@@ -131,7 +131,7 @@
   background: none;
   color: #c3c4c7;
 }
-@media (max-width: 380px) {
+@media (max-width: 420px) {
   .Todo .edit {
     width: 324px;
   }
