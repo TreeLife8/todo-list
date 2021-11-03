@@ -84,7 +84,7 @@
   background: #f57b51;
 }
 .Todo .green {
-  background: #cbf078;
+  background: #42b883;
 }
 .Todo .purple {
   background: #9896f1;
@@ -121,7 +121,7 @@
 }
 .Todo #drop.green {
   background: none;
-  color: #cbf078;
+  color: #42b883;
 }
 .Todo #drop.purple {
   background: none;
