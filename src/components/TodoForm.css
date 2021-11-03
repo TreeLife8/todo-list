@@ -1,0 +1,23 @@
+.TodoForm {
+  max-width: 480px;
+  margin: 30px auto;
+}
+.TodoForm form {
+  border-radius: 6px;
+}
+.TodoForm .form {
+  border-radius: 6px 0px 0px 6px;
+  border: 2px solid var(--pink-colour);
+  padding: 10px 15px;
+}
+.TodoForm button {
+  border-radius: 0px 6px 6px 0;
+  background: var(--pink-colour);
+  color: white;
+  padding: 6px 25px;
+  transition: 200ms all ease-in-out;
+}
+.TodoForm button:hover {
+  color: white;
+  box-shadow: 0 0 10px rgba(92, 92, 92, 0.8);
+}

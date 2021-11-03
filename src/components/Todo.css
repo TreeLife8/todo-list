@@ -1,0 +1,143 @@
+.Todo {
+  max-width: 500px;
+  margin: auto;
+}
+.Todo .todo-row {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 6px;
+  border: 1px solid rgba(238, 228, 228, 0.9);
+  box-shadow: 0 0 8px rgba(125, 125, 125, 0.5);
+  padding: 15px 25px;
+  margin: 0px;
+  color: #fff;
+}
+.Todo .complete {
+  text-decoration: line-through;
+  opacity: 0.6;
+  background: rgba(125, 125, 125, 1);
+}
+
+.Todo .hidden {
+  display: none;
+}
+.Todo .icon {
+  font-size: 24px;
+}
+.Todo .edit {
+  width: 500px;
+  padding: 0;
+  margin: auto 0;
+}
+.Todo .delete-icon,
+.Todo .colour-icon,
+.Todo .edit-icon {
+  margin-right: 5px;
+  color: #fff;
+  font-size: 24px;
+}
+.Todo #edit {
+  background: #f3f3f3;
+  border: none;
+  box-shadow: none;
+  padding: 0px;
+  margin: 0 auto;
+  height: 48px;
+  align-items: center;
+}
+.aqua,
+.blue,
+.pink,
+.yellow,
+.orange,
+.green,
+.purple,
+.grey {
+  font-size: 30px;
+}
+.Todo .colour-pallet {
+  background: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  box-shadow: 0 0 8px rgba(125, 125, 125, 0.5);
+  padding: 5px;
+  border-radius: 6px;
+  margin: auto;
+  max-width: 480px;
+}
+.Todo .aqua,
+.Todo .blue,
+.Todo .pink,
+.Todo .yellow,
+.Todo .orange,
+.Todo .green,
+.Todo .purple,
+.Todo .grey {
+  border-radius: 6px;
+  max-width: 480px;
+  margin: 0px auto;
+  font-size: 18px;
+}
+.Todo .aqua {
+  background: #66bfbf;
+}
+.Todo .blue {
+  background: #00bbf0;
+}
+.Todo .pink {
+  background: #f76b8a;
+}
+.Todo .yellow {
+  background: #ff9a3c;
+}
+.Todo .orange {
+  background: #f57b51;
+}
+.Todo .green {
+  background: #cbf078;
+}
+.Todo .purple {
+  background: #9896f1;
+}
+.Todo .grey {
+  background: #c3c4c7;
+}
+.Todo button {
+  background: #fff;
+  border: none;
+}
+.Todo #drop {
+  font-size: 26px;
+}
+.Todo #drop.aqua {
+  background: none;
+  color: #66bfbf;
+}
+.Todo #drop.blue {
+  background: none;
+  color: #00bbf0;
+}
+.Todo #drop.pink {
+  background: none;
+  color: #f76b8a;
+}
+.Todo #drop.yellow {
+  background: none;
+  color: #ff9a3c;
+}
+.Todo #drop.orange {
+  background: none;
+  color: #f57b51;
+}
+.Todo #drop.green {
+  background: none;
+  color: #cbf078;
+}
+.Todo #drop.purple {
+  background: none;
+  color: #9896f1;
+}
+.Todo #drop.grey {
+  background: none;
+  color: #c3c4c7;
+}

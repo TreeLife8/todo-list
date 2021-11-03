@@ -1,0 +1,16 @@
+.Footer {
+  text-align: center;
+  display: block;
+  margin: 30px auto;
+}
+.Footer hr {
+  max-width: 60%;
+  margin: 20px auto;
+}
+.Footer span {
+  opacity: 0.7;
+}
+
+.Footer img {
+  max-width: 120px;
+}
