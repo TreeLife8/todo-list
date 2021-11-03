@@ -15,7 +15,6 @@ export default function Todo(props) {
     id: null,
     type: "grey",
   });
-  // const [visible, setVisible] = useState(false);
   const colourPallet = [
     { id: 1, shade: "aqua" },
     { id: 2, shade: "blue" },
@@ -47,6 +46,7 @@ export default function Todo(props) {
       colour: taskColour,
     };
     props.updateTodoColour(id, newValue);
+    setColourBg({ id: null, type: "grey" });
   }
   return (
     <div className="Todo">
