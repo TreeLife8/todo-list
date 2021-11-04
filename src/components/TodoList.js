@@ -31,11 +31,6 @@ export default function TodoList() {
     }
     setTodos((prev) => prev.map((item) => (item.id === id ? newValue : item)));
   }
-  function updateTodoColour(taskId, Newcolour) {
-    setTodos((prev) =>
-      prev.map((item) => (item.id === taskId ? Newcolour : item))
-    );
-  }
   function removeTodo(id) {
     const removeArr = [...todos].filter((todo) => todo.id !== id);
     setTodos(removeArr);
@@ -59,7 +54,7 @@ export default function TodoList() {
         completeTodo={completeTodo}
         removeTodo={removeTodo}
         updateTodo={updateTodo}
-        updateTodoColour={updateTodoColour}
+        // updateTodoColour={updateTodoColour}
       />
     </div>
   );

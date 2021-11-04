@@ -3,6 +3,14 @@
   --heading-font: "Prata", serif;
   --pink-colour: #ef5592;
   --orange-colour: #f1686c;
+  --pink-colourPallet: #f76b8a;
+  --aqua-colourPallet: #66bfbf;
+  --blue-colourPallet: #00bbf0;
+  --yellow-colourPallet: #ff9a3c;
+  --orange-colourPallet: #f57b51;
+  --green-colourPallet: #42b883;
+  --purple-colourPallet: #9896f1;
+  --grey-colourPallet: #c3c4c7;
 }
 .App {
   font-family: var(--main-font);
@@ -15,6 +23,7 @@
     rgba(242, 235, 243, 0.7) 0%,
     rgba(234, 241, 249, 0.7) 90.1%
   );
+  color: var(--grey-colourPallet);
   padding: 25px;
   box-shadow: 0 0 12px rgba(125, 125, 125, 0.5);
 }

@@ -33,20 +33,14 @@ export default function Todo(props) {
       colour: "grey",
     });
   }
-  function buttonClickHandler(id, text, colour) {
-    setColourBg({ id: id, ...colour });
-    let taskText = text;
-    let taskColour = colourPallet[colour - 1].shade;
-    handleSubmit(id, taskText, taskColour);
-  }
-  function handleSubmit(id, taskText, taskColour) {
+  function colourButtonClickHandler(id, text, colour) {
     let newValue = {
       id: id,
-      text: taskText,
-      colour: taskColour,
+      text: text,
+      colour: colourPallet[colour - 1].shade,
     };
-    props.updateTodoColour(id, newValue);
-    setColourBg({ id: null, type: "grey" });
+    props.updateTodo(id, newValue);
+    setColourBg({ id: null, ...colour });
   }
   return (
     <div className="Todo">
@@ -95,7 +89,7 @@ export default function Todo(props) {
                     key={colour.id}
                     disabled={colour.clicked}
                     onClick={() =>
-                      buttonClickHandler(todo.id, todo.text, colour.id)
+                      colourButtonClickHandler(todo.id, todo.text, colour.id)
                     }
                   >
                     <GiWaterDrop

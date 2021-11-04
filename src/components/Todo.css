@@ -68,68 +68,47 @@
   margin: 0px auto;
   font-size: 15px;
 }
-.Todo .aqua {
-  background: #66bfbf;
-}
-.Todo .blue {
-  background: #00bbf0;
-}
-.Todo .pink {
-  background: #f76b8a;
-}
-.Todo .yellow {
-  background: #ff9a3c;
-}
-.Todo .orange {
-  background: #f57b51;
-}
-.Todo .green {
-  background: #42b883;
-}
-.Todo .purple {
-  background: #9896f1;
-}
-.Todo .grey {
-  background: #c3c4c7;
-}
+
 .Todo button {
   background: #fff;
   border: none;
 }
+
+.Todo .aqua {
+  color: var(--aqua-colourPallet);
+  background: var(--aqua-colourPallet);
+}
+.Todo .blue {
+  color: var(--blue-colourPallet);
+  background: var(--blue-colourPallet);
+}
+.Todo .pink {
+  color: var(--pink-colourPallet);
+  background: var(--pink-colourPallet);
+}
+.Todo .yellow {
+  color: var(--yellow-colourPallet);
+  background: var(--yellow-colourPallet);
+}
+.Todo .orange {
+  color: var(--orange-colourPallet);
+  background: var(--orange-colourPallet);
+}
+.Todo .green {
+  color: var(--green-colourPallet);
+  background: var(--green-colourPallet);
+}
+.Todo .purple {
+  color: var(--purple-colourPallet);
+  background: var(--purple-colourPallet);
+}
+.Todo .grey {
+  color: var(--grey-colourPallet);
+  background: var(--grey-colourPallet);
+}
 .Todo #drop {
+  background: none;
   font-size: 26px;
-}
-.Todo #drop.aqua {
-  background: none;
-  color: #66bfbf;
-}
-.Todo #drop.blue {
-  background: none;
-  color: #00bbf0;
-}
-.Todo #drop.pink {
-  background: none;
-  color: #f76b8a;
-}
-.Todo #drop.yellow {
-  background: none;
-  color: #ff9a3c;
-}
-.Todo #drop.orange {
-  background: none;
-  color: #f57b51;
-}
-.Todo #drop.green {
-  background: none;
-  color: #42b883;
-}
-.Todo #drop.purple {
-  background: none;
-  color: #9896f1;
-}
-.Todo #drop.grey {
-  background: none;
-  color: #c3c4c7;
 }
 @media (max-width: 420px) {
   .Todo .edit {
