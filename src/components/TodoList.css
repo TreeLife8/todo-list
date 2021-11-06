@@ -3,6 +3,7 @@
 }
 .TodoList h2 {
   margin: 30px 50px 50px;
+  color: #473341a8;
 }
 @media (max-width: 420px) {
   .TodoList h2 {
