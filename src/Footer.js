@@ -1,5 +1,4 @@
 import React from "react";
-// import logo from "./logo-no-bg.png";
 import "./Footer.css";
 
 export default function Footer() {
@@ -12,12 +11,6 @@ export default function Footer() {
         target="_blank"
         rel="noreferrer"
       >
-        {/* <img src={logo} alt="SquiggleCode logo" className="img-fluid" />
-        href="https://github.com/TreeLife8/todo-list"
-        target="_blank"
-        rel="noreferrer"
-      >
-        {" "} */}
         Regina Maher and is open sourced on GitHub
       </a>
     </div>
