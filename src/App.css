@@ -10,7 +10,7 @@
   --orange-colourPallet: #f57b51;
   --green-colourPallet: #42b883;
   --purple-colourPallet: #9896f1;
-  --grey-colourPallet: #c3c4c7;
+  --grey-colourPallet: #c3cfe2;
 }
 .App {
   font-family: var(--main-font);
